@@ -23,18 +23,15 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap">
   </head>
   <body>
     <header class="app__header">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="app__logo">
-            <a href = "http://kaboom2.ru">
-              <picture><img src="/img/svg/logo.svg" alt="Логотип Kaboom 2.0"></picture>
-            <a>
-          </div>
+          <div class="app__logo"><a href="https://kaboom2.ru/">
+              <picture><img src="/img/svg/logo.svg" alt="Логотип Kaboom 2.0"></picture></a></div>
           <nav class="app__nav">
             <ul class="nav__list d-flex align-items-center">
               <li class="nav__list-wrapper"><a class="nav__list-link" href="https://docs.google.com/spreadsheets/d/1etspOoVzbXMdlO2KcyE0lgIARf2KLDv-GRJEl_C7KBg/">Таблица цен</a></li>
@@ -65,18 +62,24 @@
           <div class="form-group">
             <label class="label input-trade-from__label" for="trade__from">Предмет, который вы хотите обменять</label>
             <div class="input-trade-from__input-wrapper">
-              <input class="input-trade-from__input" id="trade__from" type="text" list="from" placeholder="Алмаз">
-              <datalist id="from"></datalist>
+              <div class="input__arrow-down">
+                <picture><img src="/img/svg/arrow-down.svg" alt="Развернуть иконка"></picture>
+              </div>
+              <input class="input-trade-from__input" id="trade__from" type="text" list="items" placeholder="Алмаз">
+              <datalist id="items"></datalist>
             </div>
           </div>
           <div class="body__picture-wrapper">
-            <picture><img src="/img/svg/trade.svg" alt="Иконка обмена"></picture>
+            <picture><img src="/img/svg/trade.svg" alt="Иконка обменка"></picture>
           </div>
           <div class="form-group">
             <label class="label input-trade__to__label" for="trade__to">Предмет, который вы хотите обменять</label>
             <div class="input-trade__to__input-wrapper">
-              <input class="input-trade__to__input" id="trade__to" type="text" list="to" placeholder="Алмаз">
-              <datalist id="to"></datalist>
+              <div class="input__arrow-down">
+                <picture><img src="/img/svg/arrow-down.svg" alt="Развернуть иконка"></picture>
+              </div>
+              <input class="input-trade__to__input" id="trade__to" type="text" list="items" placeholder="Алмаз">
+              <datalist id="items"></datalist>
             </div>
           </div>
         </div>
@@ -106,8 +109,11 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <p>Designed and created by Shweeps & Frangell</p>
+      </div>
     </section>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
   </body>
-  <p>Designed and created by Shweeps & Frangell</p>
 </html>
