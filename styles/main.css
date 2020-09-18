@@ -409,7 +409,13 @@ body {
   min-height: 100vh;
 }
 
-
+p {
+  float: right;
+  color: #fff;
+  margin-top: 35px;
+  margin-right: 15px;
+  opacity: .5;
+}
 
 .container {
   width: 100%;
@@ -474,7 +480,7 @@ body {
 p {
   float: right;
   color: #fff;
-  margin-top: 35px;
+  padding-bottom: 20px;
   margin-right: 15px;
   opacity: .5;
 }
@@ -598,6 +604,14 @@ header {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
+}
+
+p {
+  float: right;
+  color: #fff;
+  margin-top: 35px;
+  margin-right: 15px;
+  opacity: .5;
 }
 
 body {

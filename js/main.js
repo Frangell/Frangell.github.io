@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (fromIndexPointsValue === '' && toIndexPointsValue === '') {
         $output.innerHTML = "\u041E\u0431\u0430 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u0430 \u0437\u0430\u043F\u0440\u0435\u0449\u0435\u043D\u044B \u043A \u043F\u0440\u043E\u0434\u0430\u0436\u0435";
-      } else if (!!isNan(fromIndexPointsValue)) {
+      } else if (!!isNaN(fromIndexPointsValue)) {
         $output.innerHTML = "\u041F\u0435\u0440\u0432\u044B\u0439 \u043F\u0440\u0435\u0434\u043C\u0435\u0442 \u0437\u0430\u043F\u0440\u0435\u0449\u0435\u043D \u043A \u043F\u0440\u043E\u0434\u0430\u0436\u0435";
       } else if (toIndexPointsValue === '') {
         $output.innerHTML = "\u0412\u0442\u043E\u0440\u043E\u0439 \u043F\u0440\u0435\u0434\u043C\u0435\u0442 \u0437\u0430\u043F\u0440\u0435\u0449\u0435\u043D \u043A \u043F\u0440\u043E\u0434\u0430\u0436\u0435";
