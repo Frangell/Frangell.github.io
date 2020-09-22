@@ -1,119 +1,64 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Калькулятор цен | Kaboom</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap">
-  </head>
-  <body>
-    <header class="app__header">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="app__logo"><a href="https://kaboom2.ru/">
-              <picture><img src="/img/svg/logo.svg" alt="Логотип Kaboom 2.0"></picture></a></div>
-          <nav class="app__nav">
-            <ul class="nav__list d-flex align-items-center">
-              <li class="nav__list-wrapper"><a class="nav__list-link" href="https://docs.google.com/spreadsheets/d/1etspOoVzbXMdlO2KcyE0lgIARf2KLDv-GRJEl_C7KBg/">Таблица цен</a></li>
-              <li class="nav__list-wrapper"><a class="nav__list-link" href="https://forum.kaboom2.ru/index.php">Форум</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main class="home">
-      <section class="calculator__intro">
+<html lang = "ru">
+<head>
+    <meta charset = "utf-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+</head>
+<body>
+    <header>
+        
         <div class="container">
-          <div class="row text-center">
-            <h1 class="intro__title">Конвертер предметов сервера SkyFactory</h1>
-          </div>
-        </div>
-      </section>
-    </main>
-    <section class="calculator__body">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="form-group">
-            <label class="label input-amount__label" for="amount">Кол-во</label>
-            <div class="input-amount__input-wrapper">
-              <input class="input-amount__input" id="amount" placeholder="0" type="number">
+            <div class="top">
+                <a href="https://kaboom2.ru/">
+                    <img src="img/logo.png" alt="Логотип Kaboom 2.0">
+                </a>
+
+                <ul class="menu">
+                    <li><a class = "menu_link" href="https://docs.google.com/forms/d/e/1FAIpQLSczyFoV17QcyzjSixWEEGlv3ea67IHR7npaV9j4lx4iaDNcSQ/viewform">Предложения по улучшению</a></li>
+                    <li><a class = "menu_link" href="https://forum.kaboom2.ru/index.php">Форум</a></li>
+                </ul>
+              
             </div>
-          </div>
-          <div class="form-group">
-            <label class="label input-trade-from__label" for="trade__from">Предмет, который вы хотите обменять</label>
-            <div class="input-trade-from__input-wrapper">
-              <div class="input__arrow-down">
-                <picture><img src="/img/svg/arrow-down.svg" alt="Развернуть иконка"></picture>
-              </div>
-              <input class="input-trade-from__input" id="trade__from" type="text" list="items" placeholder="Алмаз">
-              <datalist id="items"></datalist>
-            </div>
-          </div>
-          <div class="body__picture-wrapper">
-            <picture><img src="/img/svg/trade.svg" alt="Иконка обменка"></picture>
-          </div>
-          <div class="form-group">
-            <label class="label input-trade__to__label" for="trade__to">Предмет, который вы хотите обменять</label>
-            <div class="input-trade__to__input-wrapper">
-              <div class="input__arrow-down">
-                <picture><img src="/img/svg/arrow-down.svg" alt="Развернуть иконка"></picture>
-              </div>
-              <input class="input-trade__to__input" id="trade__to" type="text" list="items" placeholder="Алмаз">
-              <datalist id="items"></datalist>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <div class="output">
-      <div class="container">
-        <div class="row">
-          <p class="output__msg" id="output">Количество: &nbsp;<span class="output__value">0</span></p>
+        
+    </header>
+
+    <div class = "main">
+        <div class = "choose">
+            Выберите сервер
         </div>
-      </div>
+
+        <ul class = "servers">
+            <li class = "serv">
+                <div>
+                    <a href = "sf/index.html">
+                        <img class = "pic" src="img/skyfactory.png" alt="Логотип Kaboom 2.0">
+                    </a>
+                </div>
+
+                <div class = title>
+                    Скайфактори
+                </div>
+            </li>
+            <li class = "serv">
+                <div>
+                    <img class = "pic" src="img/cybermagic.png" alt="Логотип Kaboom 2.0">
+                </div>
+
+                <div class = title>
+                    Кибермагия
+                </div>
+            </li>
+            <li class = "serv">
+                <div>
+                    <img class = "pic" src="img/nevermine.png" alt="Логотип Kaboom 2.0">
+                </div>
+
+                <div class = title>
+                    Невермайн
+                </div>
+            </li>
+        </ul>
     </div>
-    <section class="step__list-section">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="step__item">
-            <div class="step__number">1</div>
-            <div class="step__content">Введите кол-во предметов, <br> которые вы хотите обменять</div>
-          </div>
-          <div class="step__item">
-            <div class="step__number">2</div>
-            <div class="step__content">Введите предмет, который вы хотите <br> обменять, во второе поле</div>
-          </div>
-          <div class="step__item">
-            <div class="step__number">3</div>
-            <div class="step__content">Введите название предмета, который вы <br> хотите получить, в третье поле</div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <p>Designed and created by Shweeps & Frangell</p>
-      </div>
-    </section>
-    <script src="js/main.js"></script>
-    <script src="js/vendor.js"></script>
-  </body>
-</html>
+</body>
