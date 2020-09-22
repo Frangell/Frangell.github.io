@@ -31,7 +31,7 @@ body {
     background: -o-linear-gradient(#3e1366,#641fa4);
     background: linear-gradient(#3e1366,#641fa4);
     background-size: 100% 300%;
-    -webkit-animation: 1s infinite gradient;
+    -webkit-animation: 10s infinite gradient;
     animation: 1s infinite gradient;
     padding-bottom: 50px;
     font-family: 'Pixel';
